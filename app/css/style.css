@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.welcome{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, #b80000, #d83a52, #e66c94, #e79dc8, #e8caeb, #e2c7e5, #ddc5df, #d7c2d9, #c593b0, #b4637d, #9b3442, #760000);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.welcome h1{
+    color: #760000;
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+@keyframes title{
+    0% {opacity: 0; color: #ff0000}
+    20% {opacity: 0.2; color: #db0000}
+    40% {opacity: 0.4; color: #b80000}
+    60% {opacity: 0.6; color: #960000}
+    100% {opacity: 1; color: #760000} 
+}
+
+
+.menu{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.menu button{
+    padding: 10px 120px 10px 120px; 
+    background-color: #760000;
+    border: #760000;
+    border-radius: 12px;
+    color: #ffffff;
+}
+.menu button:hover{
+    background-color: #b80000;
+}
+.container_canvas{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left bottom, #b80000, #d83a52, #e66c94, #e79dc8, #e8caeb, #e2c7e5, #ddc5df, #d7c2d9, #c593b0, #b4637d, #9b3442, #760000);
+}
+
+.container_canvas button{
+    background-color: #760000;
+    border: #760000;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 30px 10px 30px; 
+}
+.container_canvas button:hover{
+    background-color: #b80000;
+}
+.display{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hidden{
+    display: none;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.67);
+}
+
+.form_container{
+    border: solid 2px black;
+    position: absolute;
+    top: 200px;
+    height: 18%;
+    background-color: rgb(255, 165, 0);
+    width: 32%;
+}
+
+.container_score{
+    height: auto;
+    width: 50vw;
+    background-color: #760000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

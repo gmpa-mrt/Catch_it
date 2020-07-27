@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <title>Canvas</title>
+    </head>
+    <body>
+        <div id="welcome" class="welcome">
+                <h1>Welcome on Catch It</h1>
+            <div class="menu">
+                <div class="check" >
+                    <input type="radio" id='easy' name='difficulty' value='easy'>
+                    <label for="easy">Easy</label>
+                    <input type="radio" id='normal' name='difficulty' value='normal'>
+                    <label for="normal">Normal</label>
+                    <input type="radio" id='hard' name='difficulty' value='hard'>
+                    <label for="hard">Hard</label>
+                </div>
+                <button id="start">Start</button> <!-- Start -->
+                <button id="stats">Scores</button> <!-- Score -->
+               <!-- <button>item3</button>  Stats -->
+                <button id="rules">Rules</button> <!-- Rules -->
+            </div>
+        </div>
+        <div id="modal_stats" class="hidden">
+            <div class="container_score">
+                <ul></ul>
+                <button id="close_modal">X</button>
+            </div>
+        </div>
+        <div id="modal_rules" class="hidden">
+            <h2>Rules</h2>
+            <p>
+                To play this game you need to push on the arrow keys to move your hero.<br/>
+                The aim of this game is to catch 30 rubys ! <br/>
+                Good Luck !!
+            </p>
+            <button id="close_modal_rules">X</button>
+        </div>
+        <div id="modal_save" class="hidden">
+            <div class="form_container">
+                <form>
+                    <label>
+                        <input id='pseudo' type="text" placeholder="pseudo" required>
+                        <input id="score"  type="text" disabled/>
+                    </label>
+                    <button id="confirm">confirm</button>
+                    <button id="back">back</button>
+                </form>
+            </div>
+        </div>
+        <div id="game" class="hidden">
+            <h2>Catch 30 Rubys !! And It's Win</h2>
+            <canvas id="canvas"></canvas>
+            <div id="menu_in_game">   
+                <button id="pause">PAUSE</button>
+                <button id="quit">quit</button>
+            </div> 
+            <div id='end_message' class="hidden">
+                <button id='restart'>Play Again</button>
+                <button id="btn_save">Save</button>
+                <button id='end'>End</button>
+            </div>
+        </div> 
+        <script type="module" src="./js/index.js"></script>
+        <script type="module" src="./js/indexedDB.js"></script>
+    </body>
+</html>
